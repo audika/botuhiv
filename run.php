@@ -31,19 +31,19 @@ $i=1;
 while($i <= $jumlah){
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, 'https://www.fakenamegenerator.com/gen-random-en-uk.php');
+curl_setopt($ch, CURLOPT_URL, 'https://namefake.com/random/');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
 
 curl_setopt($ch, CURLOPT_ENCODING, 'gzip, deflate');
 
 $headers = array();
-$headers[] = 'Authority: https://www.fakenamegenerator.com';
+$headers[] = 'Authority: https://namefake.com/random/';
 $headers[] = 'Cache-Control: max-age=0';
 $headers[] = 'Upgrade-Insecure-Requests: 1';
 $headers[] = 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36 OPR/58.0.3135.118';
 $headers[] = 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8';
-$headers[] = 'Referer: https://www.fakenamegenerator.com/gen-random-en-uk.php';
+$headers[] = 'Referer: https://namefake.com/random/random/57066a31f24962ad5f84a1a2817975d8';
 $headers[] = 'Accept-Encoding: gzip, deflate, br';
 $headers[] = 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8';
 $headers[] = 'Cookie: _ga=GA1.2.1721516464.1553701505; _gid=GA1.2.703743984.1553878514; _gat=1';
